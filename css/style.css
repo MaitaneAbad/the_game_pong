@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.escenario {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: url(../css/images/univers.jpg);
+  background-size: cover;
+  position: relative;
+  /* cambio el eje de coordenadas */
+}
+
+.medio {
+  height: 100%;
+  width: 1px;
+  border-left: 2px dashed whitesmoke;
+  position: absolute;
+  left: 50%;
+}
+
+.pong {
+  position: absolute;
+  height: 100px;
+  width: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 15px 0 rgba(240, 208, 195, 0.75);
+  transition: linear 0.2s;
+}
+
+#pong1 {
+  top: 0;
+  left: 10px;
+}
+#pong2 {
+  top: 0;
+  right: 10px;
+}
+
+.ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: whitesmoke;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  border-radius: 50%;
+  box-shadow: 0 4px 15px 0 rgba(240, 208, 195, 0.75);
+}
